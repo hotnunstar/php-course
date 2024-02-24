@@ -1,0 +1,20 @@
+{
+    "name": "phpcourse/composer",
+    "description": "Learn composer in PHP 7 Course",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "Phpcourse\\Composer\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Nuno",
+            "email": "nu-nos@hotmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "monolog/monolog":"1.0.*"
+    }
+}
